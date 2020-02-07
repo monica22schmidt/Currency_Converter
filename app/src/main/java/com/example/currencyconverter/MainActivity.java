@@ -18,8 +18,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToActivity2(Double pounds){
+        String p = "" + pounds;
         Intent intent = new Intent(this, Main2Activity.class);
-        intent.putExtra("message", pounds);
+        intent.putExtra("message", p);
         startActivity(intent);
     }
     @Override
